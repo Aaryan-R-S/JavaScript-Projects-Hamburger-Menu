@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Burger | Toggle | ARS
+    link(rel="icon", href="/files/logo.jpg")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    block style
+        style
+           include ../files/style.css
+
+
+  body
+    section
+      nav(Class="navbar navh")
+       div
+        ul(Class=" items visl")
+          li
+           div#logo 
+             img(src="/files/windows.png", alt="Oops")
+             | ARS&copy
+          li #[a(href="/") Home]
+          li #[a(href="/") About Us]
+          li #[a(href="/") Classes] 
+          li #[a(href="/") Contact Us]
+          li #[a(href="/") Enroll]
+        div.burger 
+          div.line
+          div.line
+          div.line
+  
+    block content
+       div#content 
+         | This is my Content! 
+         
+    block scripts 
+        script(src='/files/res.js')
+
+
+   

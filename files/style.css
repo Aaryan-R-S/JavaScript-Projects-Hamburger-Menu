@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+li div{
+    color: white;
+}
+
+section{
+    background-color: rgb(26, 21, 21);
+}
+
+nav{
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.burger{
+    display: inline-block;
+    visibility: hidden;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+#logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+    /* margin-top: 4px; */
+}
+ul img{
+    height: 30px;
+    width: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 25px  0px 25px;
+    padding: 5px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav li a:hover{
+    font-size: 22px;
+    cursor: grab;
+    border:2px solid gold;
+    border-radius: 8px;
+}
+#content{
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    /* this height is imp for transition to occur-- below*/
+    nav{
+        height: 250px;
+    }/* this height is imp for transition to occur-- above*/
+
+
+    ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+    .burger{
+        visibility: visible;
+    }
+    
+    /* toggle properties */
+    
+    .visl{
+        visibility: hidden;
+    } 
+    
+    .navh{ 
+        height: 50px ;
+    }
+
+    /* extra */
+    #logo{
+      visibility: visible;
+    }
+}
